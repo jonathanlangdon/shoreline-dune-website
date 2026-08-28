@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shoreline Dune Labs is an independent software studio in West Michigan creating thoughtful utility apps for iPhone."
+    />
+    <meta name="theme-color" content="#f4f0e7" />
+    <meta property="og:title" content="Shoreline Dune Labs" />
+    <meta
+      property="og:description"
+      content="Small, focused software for everyday life. Made in West Michigan."
+    />
+    <meta property="og:type" content="website" />
+    <title>Shoreline Dune Labs — Thoughtful software from West Michigan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Shoreline Dune Labs, home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M5 28c7-9 14-13 22-12 5 1 8 4 10 7" />
+          <path d="M5 33c7-5 14-7 21-5 4 1 8 3 11 7" />
+        </svg>
+        <span>Shoreline Dune Labs</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a class="nav-contact" href="#contact">Say hello <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="sr-only">Open menu</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Say hello</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> An independent software studio</p>
+          <h1>Useful by nature.</h1>
+          <p class="hero-intro">
+            We make focused software that helps everyday life feel a little simpler—designed and developed along the Lake Michigan shoreline.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">See what’s taking shape <span aria-hidden="true">↓</span></a>
+            <p>Three iOS utilities<br />currently in development.</p>
+          </div>
+        </div>
+
+        <figure class="hero-image reveal reveal-delay">
+          <img
+            src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1800&q=88"
+            alt="Aerial view of blue water washing over a sandy shoreline"
+            width="1800"
+            height="1200"
+          />
+          <figcaption>
+            <span>West Michigan</span>
+            <span>43.0° N / 86.2° W</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="manifesto" aria-labelledby="manifesto-title">
+        <p class="section-label">01 / The studio</p>
+        <div class="manifesto-copy reveal">
+          <h2 id="manifesto-title">Software should feel like a well-made tool: clear, capable, and quietly dependable.</h2>
+          <p>
+            Shoreline Dune Labs is a West Michigan software company creating purpose-built apps with careful details and no unnecessary noise.
+          </p>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">02 / In the works</p>
+            <h2 id="work-title">Three useful things,<br />taking shape.</h2>
+          </div>
+          <p>Our first collection is built for iPhone—focused tools for better training, stronger recall, and smarter time in the sun.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card product-one reveal">
+            <div class="product-art" aria-hidden="true">
+              <span class="orbit orbit-one"></span>
+              <span class="orbit orbit-two"></span>
+              <span class="app-tile tile-one"><i></i></span>
+            </div>
+            <div class="product-meta">
+              <p><span>Fitness</span> <span>iPhone</span></p>
+              <h3>Time-under-tension workouts</h3>
+              <p class="product-description">A workout app that guides each set by time under tension instead of counting reps—keeping pace, effort, and form in focus.</p>
+              <span class="status"><i></i> In development</span>
+            </div>
+          </article>
+
+          <article class="product-card product-two reveal reveal-delay">
+            <div class="product-art" aria-hidden="true">
+              <div class="contours"></div>
+              <span class="app-tile tile-two"><i></i><i></i><i></i><b></b></span>
+            </div>
+            <div class="product-meta">
+              <p><span>Learning</span> <span>iPhone</span></p>
+              <h3>Memorization that sticks</h3>
+              <p class="product-description">A more engaging way to memorize passages, with playful practice and smart spaced repetition that adapts as you learn.</p>
+              <span class="status"><i></i> In development</span>
+            </div>
+          </article>
+
+          <article class="product-card product-three reveal reveal-delay-two">
+            <div class="product-art" aria-hidden="true">
+              <span class="sun-disc"></span>
+              <span class="dune dune-back"></span>
+              <span class="dune dune-front"></span>
+              <span class="app-tile tile-three"><i></i></span>
+            </div>
+            <div class="product-meta">
+              <p><span>Outdoors</span> <span>iPhone</span></p>
+              <h3>Smart sun exposure timer</h3>
+              <p class="product-description">Track UV exposure and reduce the risk of burning with timing adjusted for the hour, season, and current cloud cover.</p>
+              <span class="status"><i></i> In development</span>
+            </div>
+          </article>
+        </div>
+        <p class="product-note">Names and release details will be shared as each app gets closer to shore.</p>
+      </section>
+
+      <section class="approach" id="approach" aria-labelledby="approach-title">
+        <div class="approach-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=86"
+            alt="Soft morning light filtering through a quiet green woodland"
+            width="1400"
+            height="1750"
+            loading="lazy"
+          />
+          <span>Made here, made thoughtfully.</span>
+        </div>
+
+        <div class="approach-copy">
+          <p class="section-label">03 / How we work</p>
+          <h2 id="approach-title" class="reveal">Small by design.<br />High in standards.</h2>
+          <div class="principles">
+            <article class="reveal">
+              <span>01</span>
+              <div>
+                <h3>Focused</h3>
+                <p>One clear job per app. Less to learn, less to manage, more reason to keep it.</p>
+              </div>
+            </article>
+            <article class="reveal">
+              <span>02</span>
+              <div>
+                <h3>Considered</h3>
+                <p>Useful details, calm interfaces, and respect for the time and attention of the people using them.</p>
+              </div>
+            </article>
+            <article class="reveal">
+              <span>03</span>
+              <div>
+                <h3>Native</h3>
+                <p>Designed for Apple platforms to feel fast, familiar, and at home on your devices.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-top reveal">
+          <p class="section-label light">04 / Get in touch</p>
+          <p>From the lakeshore<br />to the App Store.</p>
+        </div>
+        <div class="contact-main reveal">
+          <h2 id="contact-title">Let’s make something<br /><em>useful.</em></h2>
+          <a href="mailto:hello@shorelinedunelabs.com">
+            <span>hello@shorelinedunelabs.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <footer>
+          <a class="brand brand-light" href="#top">
+            <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
+              <path d="M5 28c7-9 14-13 22-12 5 1 8 4 10 7" />
+              <path d="M5 33c7-5 14-7 21-5 4 1 8 3 11 7" />
+            </svg>
+            <span>Shoreline Dune Labs</span>
+          </a>
+          <p>West Michigan, USA · Photography via <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a></p>
+          <p>© <span data-year></span> Shoreline Dune Labs</p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
