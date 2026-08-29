@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("fonts/xn7gYHE41ni1AdIRggexSvfedN4.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("fonts/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("fonts/aFTR7PB1QTsUX8KYvumzEYOtbYf-Vlg.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 :root {
   --sand: #f4f0e7;
   --paper: #fbfaf6;
