@@ -22,26 +22,53 @@ menuButton?.addEventListener('click', () => {
   }
 });
 
-mobileNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+mobileNav
+  ?.querySelectorAll('a')
+  .forEach(link => link.addEventListener('click', closeMenu));
 
-document.querySelectorAll('[data-year]').forEach((node) => {
+document.querySelectorAll('[data-year]').forEach(node => {
   node.textContent = new Date().getFullYear();
 });
 
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('[data-year]').forEach(node => {
+  node.textContent = new Date().getFullYear();
+});
+
+const emailLink = document.querySelector('[data-email-link]');
+const emailAddress = document.querySelector('[data-email-address]');
+
+if (emailLink && emailAddress) {
+  const emailCodes = [
+    104, 101, 108, 108, 111, 64, 115, 104, 111, 114, 101, 108, 105, 110, 101,
+    100, 117, 110, 101, 46, 99, 111, 109
+  ];
+
+  const email = String.fromCharCode(...emailCodes);
+
+  emailLink.href = `mailto:${email}`;
+  emailAddress.textContent = email;
+}
+
+const prefersReducedMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+).matches;
 if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-  document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+  document
+    .querySelectorAll('.reveal')
+    .forEach(element => element.classList.add('is-visible'));
 } else {
   const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
+    entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
           observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.12 },
+    { threshold: 0.12 }
   );
-  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  document
+    .querySelectorAll('.reveal')
+    .forEach(element => observer.observe(element));
 }

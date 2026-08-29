@@ -67,7 +67,6 @@
             "name": "Shoreline Dune Labs",
             "url": "https://shorelinedune.com/",
             "description": "A West Michigan software studio creating focused native iPhone apps for everyday life.",
-            "email": "hello@shorelinedune.com",
             "logo": {
               "@type": "ImageObject",
               "url": "https://shorelinedune.com/favicon.svg",
@@ -135,8 +134,15 @@
     <!-- Bump this version whenever the CSS or JavaScript changes. -->
     <link rel="preload" href="styles.css?v=20260829-5" as="style" />
     <link rel="stylesheet" href="styles.css?v=20260829-5" />
-    <script src="script.js?v=20260829-5" defer></script>
-    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+    <script src="script.js?v=20260829-6" defer></script>
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      </style></noscript
+    >
   </head>
 
   <body>
@@ -205,9 +211,9 @@
             <source
               media="(max-width: 540px)"
               srcset="
-                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=360&h=450&q=60   360w,
-                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=540&h=675&q=60   540w,
-                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=720&h=900&q=60   720w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=360&h=450&q=60    360w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=540&h=675&q=60    540w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=720&h=900&q=60    720w,
                 https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1080&h=1350&q=60 1080w
               "
               sizes="calc(100vw - 2.4rem)"
@@ -434,8 +440,12 @@
         </div>
         <div class="contact-main reveal">
           <h2 id="contact-title">Let’s make something<br /><em>useful.</em></h2>
-          <a href="mailto:hello@shorelinedune.com">
-            <span>hello@shorelinedune.com</span>
+          <a
+            href="#contact"
+            data-email-link
+            aria-label="Email Shoreline Dune Labs"
+          >
+            <span data-email-address>Email Shoreline Dune Labs</span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
