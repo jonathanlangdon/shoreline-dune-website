@@ -88,12 +88,33 @@
         </div>
 
         <figure class="hero-image reveal reveal-delay">
-          <img
-            src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1800&q=88"
-            alt="Aerial view of blue water washing over a sandy shoreline"
-            width="1800"
-            height="1200"
-          />
+          <picture>
+            <source
+              media="(max-width: 540px)"
+              srcset="
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=360&h=450&q=82   360w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=540&h=675&q=82   540w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=720&h=900&q=82   720w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1080&h=1350&q=82 1080w
+              "
+              sizes="calc(100vw - 2.4rem)"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1200&h=800&q=82"
+              srcset="
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=600&h=400&q=82    600w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=900&h=600&q=82    900w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1200&h=800&q=82  1200w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=1800&h=1200&q=82 1800w,
+                https://images.unsplash.com/photo-1505144808419-1957a94ca61e?auto=format&fit=crop&w=2400&h=1600&q=82 2400w
+              "
+              sizes="(max-width: 900px) calc(100vw - 2.4rem), 91vw"
+              alt="Aerial view of blue water washing over a sandy shoreline"
+              width="1800"
+              height="1200"
+              fetchpriority="high"
+            />
+          </picture>
           <figcaption>
             <span>West Michigan</span>
             <span>43.0° N / 86.2° W</span>
@@ -131,9 +152,21 @@
           <article class="product-card product-one reveal">
             <div class="product-art" aria-hidden="true">
               <img
-                src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&h=1000&q=80"
+                srcset="
+                  https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=320&h=400&q=80    320w,
+                  https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=480&h=600&q=80    480w,
+                  https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=640&h=800&q=80    640w,
+                  https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&h=1000&q=80   800w,
+                  https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&h=1500&q=80 1200w,
+                  https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1600&h=2000&q=80 1600w
+                "
+                sizes="(max-width: 900px) calc(100vw - 2.4rem), calc(30.333vw - 0.8rem)"
                 alt=""
+                width="800"
+                height="1000"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="product-meta">
@@ -150,9 +183,21 @@
           <article class="product-card product-two reveal reveal-delay">
             <div class="product-art" aria-hidden="true">
               <img
-                src="https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=800&h=1000&q=80"
+                srcset="
+                  https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=320&h=400&q=80    320w,
+                  https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=480&h=600&q=80    480w,
+                  https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=640&h=800&q=80    640w,
+                  https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=800&h=1000&q=80   800w,
+                  https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=1200&h=1500&q=80 1200w,
+                  https://images.unsplash.com/photo-1554355607-27bb1b3e19b3?auto=format&fit=crop&w=1600&h=2000&q=80 1600w
+                "
+                sizes="(max-width: 900px) calc(100vw - 2.4rem), calc(30.333vw - 0.8rem)"
                 alt=""
+                width="800"
+                height="1000"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="product-meta">
@@ -169,9 +214,21 @@
           <article class="product-card product-three reveal reveal-delay-two">
             <div class="product-art" aria-hidden="true">
               <img
-                src="https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=800&h=1000&q=80"
+                srcset="
+                  https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=320&h=400&q=80    320w,
+                  https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=480&h=600&q=80    480w,
+                  https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=640&h=800&q=80    640w,
+                  https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=800&h=1000&q=80   800w,
+                  https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=1200&h=1500&q=80 1200w,
+                  https://images.unsplash.com/photo-1561182254-00c76e27905d?auto=format&fit=crop&w=1600&h=2000&q=80 1600w
+                "
+                sizes="(max-width: 900px) calc(100vw - 2.4rem), calc(30.333vw - 0.8rem)"
                 alt=""
+                width="800"
+                height="1000"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="product-meta">
@@ -194,11 +251,21 @@
       <section class="approach" id="approach" aria-labelledby="approach-title">
         <div class="approach-image reveal">
           <img
-            src="https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=1400&q=86"
+            src="https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=800&h=1000&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=400&h=500&q=80    400w,
+              https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=600&h=750&q=80    600w,
+              https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=800&h=1000&q=80   800w,
+              https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=1000&h=1250&q=80 1000w,
+              https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=1400&h=1750&q=80 1400w,
+              https://images.unsplash.com/photo-1776530583843-07b18cdb16a5?auto=format&fit=crop&w=1800&h=2250&q=80 1800w
+            "
+            sizes="(max-width: 900px) 100vw, 48vw"
             alt="A lush green forest stretching across the landscape"
             width="1400"
             height="1750"
             loading="lazy"
+            decoding="async"
           />
           <span>Made here, made thoughtfully.</span>
         </div>

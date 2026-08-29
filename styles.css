@@ -101,6 +101,7 @@ button { color: inherit; font: inherit; }
 .button-dark:hover span { transform: translateY(4px); }
 .hero-actions p { margin: 0; font: 400 0.66rem/1.55 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; }
 .hero-image { margin: 6vw 0 0; position: relative; }
+.hero-image picture { display: block; }
 .hero-image img { width: 100%; height: clamp(420px, 55vw, 780px); object-fit: cover; object-position: center 52%; filter: saturate(0.76) contrast(0.96); }
 .hero-image figcaption {
   position: absolute;
