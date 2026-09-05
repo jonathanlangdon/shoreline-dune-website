@@ -249,7 +249,7 @@ button {
   display: grid;
   grid-template-columns: minmax(160px, 0.7fr) 3fr;
   gap: 3rem;
-  padding: 11vw 4.5vw;
+  padding: clamp(7rem, 9vw, 10rem) 4.5vw;
   border-bottom: 1px solid var(--line);
 }
 .manifesto-copy h2 {
@@ -270,7 +270,7 @@ button {
 
 .work {
   background: var(--paper);
-  padding: 10vw 4.5vw 7vw;
+  padding: clamp(7rem, 8.5vw, 9.5rem) 4.5vw clamp(5rem, 6vw, 7rem);
 }
 .section-heading {
   display: flex;
@@ -367,7 +367,7 @@ button {
 .approach {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  min-height: 900px;
+  min-height: clamp(760px, 65vw, 900px);
   background: var(--sand);
 }
 .approach-image {
@@ -392,7 +392,7 @@ button {
   text-transform: uppercase;
 }
 .approach-copy {
-  padding: 9vw 7vw;
+  padding: clamp(5rem, 7.5vw, 8.5rem) clamp(3.5rem, 6vw, 7rem);
 }
 .approach-copy h2 {
   margin-bottom: 5rem;
@@ -427,7 +427,7 @@ button {
 .contact {
   background: var(--lake);
   color: white;
-  padding: 7vw 4.5vw 2rem;
+  padding: clamp(5.5rem, 6vw, 7rem) 4.5vw 2rem;
 }
 .section-label.light {
   color: rgba(255, 255, 255, 0.72);
@@ -445,7 +445,7 @@ button {
   color: rgba(255, 255, 255, 0.72);
 }
 .contact-main {
-  padding: 8vw 0 10vw;
+  padding: clamp(5rem, 7vw, 8rem) 0 clamp(6rem, 8vw, 9rem);
 }
 .contact-main h2 {
   margin: 0 0 4rem;
