@@ -457,9 +457,11 @@ button {
   letter-spacing: -0.07em;
   font-weight: 500;
 }
-.contact-main em {
-  font-family: Georgia, serif;
+.serif-accent {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
   font-weight: 400;
+  letter-spacing: -0.04em;
 }
 .contact-main > a {
   display: flex;
