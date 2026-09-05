@@ -713,6 +713,152 @@ footer p a {
   background: var(--lake);
 }
 
+.uv-overlay {
+  position: absolute;
+  right: clamp(0.8rem, 2vw, 1.4rem);
+  bottom: clamp(0.8rem, 2vw, 1.4rem);
+
+  width: clamp(190px, 54%, 255px);
+  padding: clamp(0.9rem, 2vw, 1.25rem);
+
+  background: rgba(251, 250, 246, 0.94);
+  border: 1px solid rgba(23, 32, 30, 0.14);
+  color: var(--ink);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.uv-overlay-top {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(23, 32, 30, 0.16);
+
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.uv-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--orange);
+  flex: 0 0 auto;
+}
+
+.uv-current {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+.uv-current > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.uv-caption,
+.uv-time-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--lake);
+}
+
+.uv-value {
+  margin-top: 0.15rem;
+
+  font-family: 'DM Mono', monospace;
+  font-size: clamp(2.1rem, 5vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.08em;
+  color: var(--lake);
+}
+
+.uv-sun {
+  display: grid;
+  place-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  color: var(--orange);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.uv-time-label {
+  margin-top: 1.15rem;
+}
+
+.uv-time {
+  margin-top: 0.2rem;
+
+  font-family: 'DM Mono', monospace;
+  font-size: clamp(2.3rem, 5.5vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.08em;
+  color: var(--lake);
+}
+
+.uv-progress {
+  height: 0.45rem;
+  margin-top: 0.9rem;
+
+  border: 1px solid rgba(23, 32, 30, 0.18);
+  overflow: hidden;
+}
+
+.uv-progress span {
+  display: block;
+  width: 55%;
+  height: 100%;
+  background: var(--lake);
+}
+
+.uv-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-top: 0.8rem;
+
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+.uv-footer strong {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--lake);
+}
+
+@media (max-width: 600px) {
+  .uv-overlay {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    width: calc(100% - 1.6rem);
+    padding: 0.9rem 1rem;
+  }
+
+  .uv-value {
+    font-size: clamp(2.1rem, 9vw, 2.8rem);
+  }
+
+  .uv-time {
+    font-size: clamp(2.4rem, 11vw, 3.2rem);
+  }
+}
+
 @media (max-width: 600px) {
   .memorize-overlay {
     right: 0.8rem;
