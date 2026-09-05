@@ -33,6 +33,7 @@
   --line: rgba(23, 32, 30, 0.16);
   --mono: 'DM Mono', monospace;
   --sans: 'Manrope', sans-serif;
+  --hero-indent: clamp(5rem, 14vw, 13rem);
 }
 
 * {
@@ -182,13 +183,13 @@ button {
 }
 .hero-intro {
   max-width: 700px;
-  margin: 3rem 0 0 19vw;
+  margin: 3rem 0 0 var(--hero-indent);
   font-size: clamp(1.3rem, 2vw, 2rem);
   line-height: 1.42;
   letter-spacing: -0.035em;
 }
 .hero-actions {
-  margin: 3rem 0 0 19vw;
+  margin: 3rem 0 0 var(--hero-indent);
   display: flex;
   align-items: center;
   gap: 2.2rem;
