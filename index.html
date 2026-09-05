@@ -390,24 +390,40 @@
 
       <section class="approach" id="approach" aria-labelledby="approach-title">
         <div class="approach-image reveal">
-          <img
-            src="images/forest-800.webp"
-            srcset="
-              images/forest-400.webp   400w,
-              images/forest-600.webp   600w,
-              images/forest-720.webp   720w,
-              images/forest-800.webp   800w,
-              images/forest-1000.webp 1000w,
-              images/forest-1400.webp 1400w,
-              images/forest-1800.webp 1800w
-            "
-            sizes="(max-width: 900px) 100vw, 48vw"
-            alt="A lush green forest stretching across the landscape"
-            width="1400"
-            height="1750"
-            loading="lazy"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                images/forest-400.avif   400w,
+                images/forest-600.avif   600w,
+                images/forest-720.avif   720w,
+                images/forest-800.avif   800w,
+                images/forest-1000.avif 1000w,
+                images/forest-1400.avif 1400w,
+                images/forest-1800.avif 1800w
+              "
+              sizes="(max-width: 900px) 100vw, 48vw"
+            />
+
+            <img
+              src="images/forest-800.webp"
+              srcset="
+                images/forest-400.webp   400w,
+                images/forest-600.webp   600w,
+                images/forest-720.webp   720w,
+                images/forest-800.webp   800w,
+                images/forest-1000.webp 1000w,
+                images/forest-1400.webp 1400w,
+                images/forest-1800.webp 1800w
+              "
+              sizes="(max-width: 900px) 100vw, 48vw"
+              alt="A lush green forest stretching across the landscape"
+              width="1400"
+              height="1750"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
           <span>Made here, made thoughtfully.</span>
         </div>
 
