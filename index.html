@@ -209,6 +209,18 @@
           <picture>
             <source
               media="(max-width: 540px)"
+              type="image/avif"
+              srcset="
+                images/shoreline-hero-mobile-540.avif   540w,
+                images/shoreline-hero-mobile-720.avif   720w,
+                images/shoreline-hero-mobile-1080.avif 1080w
+              "
+              sizes="calc(100vw - 2.4rem)"
+            />
+
+            <source
+              media="(max-width: 540px)"
+              type="image/webp"
               srcset="
                 images/shoreline-hero-mobile-540.webp   540w,
                 images/shoreline-hero-mobile-1080.webp 1080w
