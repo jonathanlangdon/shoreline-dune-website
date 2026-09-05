@@ -117,6 +117,8 @@ button {
   gap: 0.7rem;
   font-weight: 700;
   letter-spacing: -0.03em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .brand-mark {
   width: 34px;
@@ -136,7 +138,7 @@ button {
   transition: opacity 180ms ease;
 }
 .desktop-nav a:hover {
-  opacity: 0.55;
+  opacity: 0.7;
 }
 .nav-contact {
   border-bottom: 1px solid currentColor;
@@ -910,17 +912,20 @@ footer p a {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   section[id] {
     scroll-margin-top: 74px;
   }
+
   .site-header {
     height: 74px;
     padding: 0 1.2rem;
   }
+
   .desktop-nav {
     display: none;
   }
+
   .menu-button {
     display: grid;
     place-content: center;
@@ -932,6 +937,7 @@ footer p a {
     cursor: pointer;
     z-index: 2;
   }
+
   .menu-button > span:not(.sr-only) {
     display: block;
     width: 22px;
@@ -939,12 +945,15 @@ footer p a {
     background: currentColor;
     transition: transform 180ms ease;
   }
+
   .menu-button[aria-expanded='true'] > span:nth-last-child(2) {
     transform: translateY(3.5px) rotate(45deg);
   }
+
   .menu-button[aria-expanded='true'] > span:last-child {
     transform: translateY(-3.5px) rotate(-45deg);
   }
+
   .mobile-nav {
     position: fixed;
     inset: 0;
@@ -959,69 +968,90 @@ footer p a {
     letter-spacing: -0.06em;
     z-index: 1;
   }
+
   .mobile-nav:not([hidden]) {
     display: flex;
   }
+
   .mobile-nav a {
     border-bottom: 1px solid var(--line);
     padding-bottom: 1rem;
   }
+}
+
+@media (max-width: 900px) {
   .hero {
     padding: 5rem 1.2rem 1.2rem;
   }
+
   .hero-intro,
   .hero-actions {
     margin-left: 0;
   }
+
   .hero-intro {
     margin-top: 2rem;
   }
+
   .hero-actions {
     align-items: flex-start;
     justify-content: space-between;
   }
+
   .hero-image {
     margin-top: 4rem;
   }
+
   .manifesto {
     grid-template-columns: 1fr;
     padding: 7rem 1.2rem;
   }
+
   .manifesto-copy > p {
     margin: 3rem 0 0;
   }
+
   .work {
     padding: 7rem 1.2rem 5rem;
   }
+
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 3.5rem;
   }
+
   .product-grid {
     grid-template-columns: 1fr;
   }
+
   .product-art {
     height: 110vw;
     max-height: 630px;
   }
+
   .product-description {
     min-height: 0;
     max-width: 38rem;
   }
+
   .approach {
     grid-template-columns: 1fr;
   }
+
   .approach-image {
     height: clamp(320px, 70vw, 480px);
     min-height: 0;
   }
+
   .approach-copy {
     padding: 6rem 1.2rem;
   }
+
   .contact {
     padding: 5rem 1.2rem 2rem;
   }
+
   footer {
     grid-template-columns: 1fr;
     gap: 1.3rem;
