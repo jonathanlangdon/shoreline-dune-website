@@ -503,19 +503,27 @@ footer p a {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal.reveal-pending {
   opacity: 0;
   transform: translateY(24px);
   transition:
     opacity 700ms ease,
     transform 700ms ease;
 }
-.reveal-delay {
+
+.reveal.reveal-pending.reveal-delay {
   transition-delay: 100ms;
 }
-.reveal-delay-two {
+
+.reveal.reveal-pending.reveal-delay-two {
   transition-delay: 200ms;
 }
-.reveal.is-visible {
+
+.reveal.reveal-pending.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
