@@ -49,14 +49,17 @@ if (emailLink && emailAddress) {
   emailAddress.textContent = email;
 }
 
+const revealElements = document.querySelectorAll('.reveal');
+
 const prefersReducedMotion = window.matchMedia(
   '(prefers-reduced-motion: reduce)'
 ).matches;
-if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-  document
-    .querySelectorAll('.reveal')
-    .forEach(element => element.classList.add('is-visible'));
-} else {
+
+if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+  revealElements.forEach(element => {
+    element.classList.add('reveal-pending');
+  });
+
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -68,7 +71,6 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
     },
     { threshold: 0.12 }
   );
-  document
-    .querySelectorAll('.reveal')
-    .forEach(element => observer.observe(element));
+
+  revealElements.forEach(element => observer.observe(element));
 }
