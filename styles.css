@@ -300,8 +300,13 @@ button {
 }
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.2rem;
+}
+@media (min-width: 1201px) {
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 .product-card {
   min-width: 0;
@@ -531,6 +536,68 @@ footer p a {
 .product-art {
   position: relative;
 }
+.memory-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5e7cf;
+}
+.memory-art-label {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #725339;
+  font: 400 0.72rem/1.4 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.product-art.memory-art img {
+  width: 90%;
+  height: 80%;
+  margin-top: 10%;
+  object-fit: contain;
+  filter: none;
+}
+.memory-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.72rem 0.9rem;
+  background: #725339;
+  color: #fffaf2;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.memory-link:hover {
+  background: #543c29;
+}
+.sun-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e2bd;
+}
+.product-art.sun-art img {
+  width: 100%;
+  height: 94%;
+  object-fit: contain;
+  filter: none;
+}
+@media (min-width: 901px) {
+  .sun-art {
+    align-items: flex-start;
+  }
+  .product-art.sun-art img {
+    height: 75%;
+    margin-top: 1rem;
+  }
+  .sun-art .uv-overlay {
+    transform: scale(0.7);
+    transform-origin: bottom right;
+  }
+}
 .workout-art {
   background: #111820;
 }
@@ -577,6 +644,17 @@ footer p a {
   width: 1.45rem;
   height: auto;
   flex: 0 0 auto;
+}
+.mascot-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.mascot-icon {
+  width: 1.45rem;
+  height: 1.45rem;
+  flex: 0 0 auto;
+  border-radius: 0.2rem;
 }
 
 .workout-overlay {
@@ -730,6 +808,45 @@ footer p a {
   border-radius: 50%;
   background: #12add8;
   content: '';
+}
+
+.memory-features li::before {
+  background: #725339;
+}
+
+.sun-features li::before {
+  background: var(--orange);
+}
+
+.snow-features li::before {
+  background: #1765a3;
+}
+
+.snow-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #b9dbef url('images/snow-day-background.jpg') center / cover;
+}
+.product-art.snow-art img {
+  width: 95%;
+  height: 92%;
+  object-fit: contain;
+  filter: none;
+}
+.snow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.72rem 0.9rem;
+  background: #1765a3;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.snow-link:hover {
+  background: #104c7d;
 }
 
 .workout-actions {
