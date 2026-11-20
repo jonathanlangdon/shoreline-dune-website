@@ -311,6 +311,9 @@ button {
 .product-card {
   min-width: 0;
 }
+.product-card[hidden] {
+  display: none;
+}
 .product-art {
   position: relative;
   height: 36vw;
